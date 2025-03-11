@@ -17,9 +17,9 @@ from src.ppca import PPCA
 
 if __name__=="__main__":
     parser= argparse.ArgumentParser()
-    parser.add_argument("path", type=str, help="enter path")
-    parser.add_argument("q", type=int, help="number of principal components")
-    parser.add_argument("digit", type=int, help="number between 0 and 9")
+    parser.add_argument("--path", type=str, help="enter path")
+    parser.add_argument("--q", type=int, help="number of principal components")
+    parser.add_argument("--digit", type=int, help="number between 0 and 9")
     args = parser.parse_args()
 
     file_path = args.path
